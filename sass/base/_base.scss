@@ -4,7 +4,8 @@ body {
 }
 
 .wrp-Single {
-  background-image: url('../img/front.jpg');
+  background-color: line rgba(0,0,0,0.2);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/te-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,7 +14,7 @@ body {
 }
 
 .wrp-Album {
-  background-image: url('../img/album-front.jpg');
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/nd-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -26,9 +27,17 @@ img {
   width: 100%;
 }
 
+.img-Logo {
+  max-width: 80%;
+}
+
 .img-Title {
   max-width: 700px;
   margin: 50px auto;
+}
+
+.img-Single_Cover {
+  max-width: 35%;
 }
 
 .flickity-viewport {
@@ -39,5 +48,17 @@ img {
   background: none;
   svg {
     fill: #fff;
+  }
+
+  &:hover {
+    background: none;
+  }
+
+  &.next {
+    right: -50px;
+  }
+
+  &.previous {
+    left: -50px;
   }
 }
