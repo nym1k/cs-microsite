@@ -1,0 +1,43 @@
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.wrp-Single {
+  background-image: url('../img/front.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.wrp-Album {
+  background-image: url('../img/album-front.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.img-Title {
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.flickity-viewport {
+  width: 100%;
+}
+
+.flickity-prev-next-button {
+  background: none;
+  svg {
+    fill: #fff;
+  }
+}

@@ -1,0 +1,9 @@
+@mixin spacer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@mixin inner {
+  padding-left: 50px;
+  padding-right: 50px;
+}

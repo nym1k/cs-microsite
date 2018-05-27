@@ -1,0 +1,22 @@
+.her-Container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.her-Content {
+  padding: 0 20px;
+  max-width: 1024px;
+  text-align: center;
+}
+
+.her-Heading {
+  font-family: $font1;
+}

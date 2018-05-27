@@ -1,0 +1,30 @@
+.sec-Section {
+  @include spacer;
+  @include inner;
+  text-align: center;
+}
+
+.sec-Section--colour {
+  @extend .sec-Section;
+
+  .wrp-Single & {
+    background-color: #1fbfc3;
+  }
+
+  .wrp-Album & {
+    background-color: pink;
+  }
+
+}
+
+.sec-Hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.sec-Hero--small {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
