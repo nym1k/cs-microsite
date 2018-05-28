@@ -535,13 +535,14 @@ h1, h2, h3, h4, h5, h6 {
     .sec-Columns {
       display: block; } }
 
-.sec-Columns--album {
-  display: flex;
-  flex-direction: column; }
-  .sec-Columns--album .sec-Column:first-child {
-    order: 2; }
-  .sec-Columns--album .sec-Column:last-child {
-    order: 1; }
+@media screen and (max-width: 600px) {
+  .sec-Columns--album {
+    display: flex;
+    flex-direction: column; }
+    .sec-Columns--album .sec-Column:first-child {
+      order: 2; }
+    .sec-Columns--album .sec-Column:last-child {
+      order: 1; } }
 
 .sec-Column {
   flex: 0 0 50%;
