@@ -30,6 +30,9 @@ ul {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  @media screen and (max-width: 600px) {
+    background-attachment: scroll;
+  }
 }
 
 .wrp-Album {
@@ -39,6 +42,9 @@ ul {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  @media screen and (max-width: 600px) {
+    background-attachment: scroll;
+  }
 }
 
 img {

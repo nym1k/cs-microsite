@@ -323,6 +323,9 @@ ul {
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
+  @media screen and (max-width: 600px) {
+    .wrp-Single {
+      background-attachment: scroll; } }
 
 .wrp-Album {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/nd-bg.jpg");
@@ -331,6 +334,9 @@ ul {
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
+  @media screen and (max-width: 600px) {
+    .wrp-Album {
+      background-attachment: scroll; } }
 
 img {
   max-width: 100%;
