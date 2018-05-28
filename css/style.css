@@ -515,11 +515,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 
 .sec-Hero {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .sec-Hero--small {
   width: 100%;
-  height: 500px; }
+  height: 500px;
+  position: relative; }
 
 .sec-Columns {
   display: flex; }
