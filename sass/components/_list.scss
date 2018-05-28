@@ -4,11 +4,13 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .lst-Flex_Item {
   width: 20%;
   margin-right: 40px;
+
+  @media screen and (max-width: 600px) {
+    width: 50%;
+  }
 }

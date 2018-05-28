@@ -1,6 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #333;
   color: #fff;
+  font-family: $font2;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    line-height: 1.5;
+  }
 }
 
 .wrp-Single {
@@ -29,6 +48,7 @@ img {
 
 .img-Logo {
   max-width: 80%;
+  margin-bottom: 30px;
 }
 
 .img-Title {
@@ -36,8 +56,8 @@ img {
   margin: 50px auto;
 }
 
-.img-Single_Cover {
-  max-width: 35%;
+.img-Shadow {
+  box-shadow: 1px 1px 20px 0px #000;
 }
 
 .flickity-viewport {
@@ -46,6 +66,11 @@ img {
 
 .flickity-prev-next-button {
   background: none;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+
   svg {
     fill: #fff;
   }
@@ -55,10 +80,23 @@ img {
   }
 
   &.next {
-    right: -50px;
+    right: -60px;
   }
 
   &.previous {
-    left: -50px;
+    left: -60px;
   }
+}
+
+.flickity-page-dots {
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+.ft-Footer {
+  text-align: center;
+  margin: 20px 0;
 }

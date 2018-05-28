@@ -1,9 +1,17 @@
 @mixin spacer {
   padding-top: 80px;
   padding-bottom: 80px;
+  @media screen and (max-width: 600px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 @mixin inner {
   padding-left: 50px;
   padding-right: 50px;
+  @media screen and (max-width: 600px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
