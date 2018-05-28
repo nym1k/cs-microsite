@@ -12,6 +12,10 @@ body {
   font-family: $font2;
 }
 
+a {
+  color: currentColor;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -22,29 +26,34 @@ ul {
   }
 }
 
-.wrp-Single {
-  background-color: line rgba(0,0,0,0.2);
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/te-bg.jpg');
+.wrp-Wrap {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     background-attachment: scroll;
   }
 }
 
-.wrp-Album {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/nd-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
+.wrp-Single {
+  @extend .wrp-Wrap;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/te-bg.jpg');
   @media screen and (max-width: 600px) {
-    background-attachment: scroll;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/te-mo-bg.jpg');
   }
+}
+
+.wrp-Album {
+  @extend .wrp-Wrap;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/nd-bg.jpg');
+}
+
+.wrp-Solace {
+  @extend .wrp-Wrap;
+  background-position: bottom;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%), url('../img/solace-front.jpg');
 }
 
 img {
@@ -73,7 +82,7 @@ img {
 .flickity-prev-next-button {
   background: none;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 
@@ -97,7 +106,7 @@ img {
 .flickity-page-dots {
   display: none;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     display: block;
   }
 }
