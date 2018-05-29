@@ -3,14 +3,34 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
 }
 
 .lst-Flex_Item {
-  width: 20%;
+  width: calc(20% - 40px);
   margin-right: 40px;
 
   @media screen and (max-width: 600px) {
     width: 50%;
+  }
+}
+
+.lst-Social_Items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.lst-Social_Item {
+  width: calc(10% - 20px);
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: calc(25% - 20px);
   }
 }

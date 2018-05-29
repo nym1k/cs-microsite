@@ -10,6 +10,7 @@ body {
   background-color: #333;
   color: #fff;
   font-family: $font2;
+  overflow-x: hidden;
 }
 
 a {
@@ -54,6 +55,9 @@ ul {
   @extend .wrp-Wrap;
   background-position: bottom;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%), url('../img/solace-front.jpg');
+  @media screen and (max-width: 600px) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/solace-front.jpg');
+  }
 }
 
 img {
@@ -62,7 +66,9 @@ img {
 }
 
 .img-Logo {
-  max-width: 80%;
+  @media screen and (min-width: 601px) {
+    max-width: 80%;
+  }
   margin-bottom: 30px;
 }
 
@@ -95,11 +101,11 @@ img {
   }
 
   &.next {
-    right: -60px;
+    right: -40px;
   }
 
   &.previous {
-    left: -60px;
+    left: -40px;
   }
 }
 

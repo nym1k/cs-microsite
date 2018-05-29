@@ -16,7 +16,7 @@
   }
 
   .wrp-Solace & {
-    background-color: $color-tertiary; 
+    background-color: $color-tertiary;
   }
 
 }
@@ -24,6 +24,10 @@
 .sec-Section_Inner {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.sec-Banner {
+  padding: 10px;
 }
 
 .sec-Hero {
