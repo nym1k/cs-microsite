@@ -486,8 +486,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center; }
 
 .lst-Social_Item {
-  width: calc(10% - 20px);
-  margin-right: 20px; }
+  width: 5%;
+  margin-right: 50px; }
   .lst-Social_Item:last-child {
     margin-right: 0; }
   @media screen and (max-width: 600px) {
@@ -515,36 +515,43 @@ h1, h2, h3, h4, h5, h6 {
     .lst-Flex_Items .crd-Tile_Content i {
       margin-bottom: 20px; }
 
-.sec-Section, .sec-Section--colour {
+.sec-Section {
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 50px;
   padding-right: 50px;
   text-align: center; }
   @media screen and (max-width: 600px) {
-    .sec-Section, .sec-Section--colour {
+    .sec-Section {
       padding-top: 40px;
       padding-bottom: 40px; } }
   @media screen and (max-width: 600px) {
-    .sec-Section, .sec-Section--colour {
+    .sec-Section {
       padding-left: 20px;
       padding-right: 20px; } }
 
-.wrp-Single .sec-Section--colour {
-  background-color: #1ca7a2; }
-
-.wrp-Album .sec-Section--colour {
-  background-color: #7F4E85; }
-
-.wrp-Solace .sec-Section--colour {
-  background-color: #365B3B; }
+.sec-Section--colour {
+  padding: 40px 0;
+  padding-left: 50px;
+  padding-right: 50px; }
+  @media screen and (max-width: 600px) {
+    .sec-Section--colour {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  .wrp-Single .sec-Section--colour {
+    background-color: #1ca7a2; }
+  .wrp-Album .sec-Section--colour {
+    background-color: #7F4E85; }
+  .wrp-Solace .sec-Section--colour {
+    background-color: #365B3B; }
 
 .sec-Section_Inner {
   max-width: 1200px;
   margin: 0 auto; }
 
 .sec-Banner {
-  padding: 10px; }
+  padding: 10px;
+  background: #365B3B; }
 
 .sec-Hero {
   width: 100%;

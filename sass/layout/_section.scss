@@ -5,7 +5,8 @@
 }
 
 .sec-Section--colour {
-  @extend .sec-Section;
+  padding: 40px 0;
+  @include inner;
 
   .wrp-Single & {
     background-color: $color-primary;
@@ -28,6 +29,7 @@
 
 .sec-Banner {
   padding: 10px;
+  background: $color-tertiary;
 }
 
 .sec-Hero {
