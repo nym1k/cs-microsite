@@ -15,12 +15,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  i {
+    transition: transform .3s ease;
+
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+      font-size: 3.5em;
+    }
+  }
+
+  h3 {
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+      font-size: 1em;
+    }
+  }
+
+  &:hover {
+    i {
+      transform: scale(1.1);
+    }
+  }
 
   .lst-Flex_Items & {
-    background: rgba(0,0,0,0.2);
-    
+
     i {
       margin-bottom: 20px;
+    }
+  }
+
+  &.coming-soon {
+    color: #ccc;
+    opacity: .7;
+    background-color: transparent;
+    cursor: default;
+    i {
     }
   }
 }

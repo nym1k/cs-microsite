@@ -1,6 +1,6 @@
 $('.lst-Flex_Items').flickity({
   // options
-  cellAlign: 'center',
+  cellAlign: 'left',
   contain: true,
   cellSelector: '.lst-Flex_Item',
   wrapAround: true

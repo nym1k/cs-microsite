@@ -17,7 +17,8 @@
   }
 
   .wrp-Solace & {
-    background-color: $color-tertiary;
+    background-color: $color-grey;
+    text-align: center;
   }
 
 }
@@ -29,7 +30,14 @@
 
 .sec-Banner {
   padding: 10px;
-  background: $color-tertiary;
+  background: $color-grey;
+
+  @media screen and (min-width: 769px) {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    z-index: 10;
+  }
 }
 
 .sec-Hero {
