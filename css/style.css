@@ -324,7 +324,9 @@ ul {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  max-width: 100%;
+  overflow: hidden; }
   @media screen and (max-width: 900px) {
     .wrp-Wrap, .wrp-Single, .wrp-Album, .wrp-Solace {
       background-attachment: scroll; } }
@@ -469,18 +471,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex; }
+  display: flex;
+  max-width: 100%; }
 
 .lst-Flex_Item {
   width: calc(20% - 40px);
   margin-right: 40px; }
   @media screen and (max-width: 800px) {
     .lst-Flex_Item {
-      width: 33.33%;
+      width: calc(33.33% - 20px);
       margin-right: 20px; } }
   @media screen and (max-width: 600px) {
     .lst-Flex_Item {
-      width: 50%; } }
+      width: calc(50% - 20px); } }
 
 .lst-Social_Items {
   margin: 0;

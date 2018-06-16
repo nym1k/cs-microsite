@@ -33,6 +33,9 @@ ul {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  
   @media screen and (max-width: 900px) {
     background-attachment: scroll;
   }
