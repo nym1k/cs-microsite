@@ -435,6 +435,9 @@ h1, h2, h3, h4, h5, h6 {
     .her-Heading {
       font-size: 1.2em; } }
 
+.her-Heading_Link {
+  margin-left: 20px; }
+
 @media screen and (min-width: 601px) {
   .her-Video_Container {
     max-width: 80%;
