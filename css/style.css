@@ -332,10 +332,10 @@ ul {
       background-attachment: scroll; } }
 
 .wrp-Single {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/te-bg.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/gl-bg.jpg"); }
   @media screen and (max-width: 600px) {
     .wrp-Single {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/te-mo-bg.jpg"); } }
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/gl-mo-bg.jpg"); } }
 
 .wrp-Album {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/nd-bg.jpg"); }
@@ -389,7 +389,8 @@ img {
 
 .ft-Footer {
   text-align: center;
-  padding: 20px 0; }
+  padding: 20px 0;
+  background-color: #333; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -576,8 +577,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1ca7a2; }
   .wrp-Album .sec-Section--colour {
     background-color: #7F4E85; }
+  .wrp-Footer .sec-Section--colour,
   .wrp-Solace .sec-Section--colour {
-    background-color: #333;
+    background-color: #3A3A3A;
     text-align: center; }
 
 .sec-Section_Inner {

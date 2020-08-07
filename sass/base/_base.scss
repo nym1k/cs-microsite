@@ -35,7 +35,7 @@ ul {
   position: relative;
   max-width: 100%;
   overflow: hidden;
-  
+
   @media screen and (max-width: 900px) {
     background-attachment: scroll;
   }
@@ -43,9 +43,9 @@ ul {
 
 .wrp-Single {
   @extend .wrp-Wrap;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/te-bg.jpg');
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%), url('../img/gl-bg.jpg');
   @media screen and (max-width: 600px) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/te-mo-bg.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%), url('../img/gl-mo-bg.jpg');
   }
 }
 
@@ -123,4 +123,5 @@ img {
 .ft-Footer {
   text-align: center;
   padding: 20px 0;
+  background-color: $color-grey;
 }
