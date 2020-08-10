@@ -8,19 +8,9 @@ html {
 
 body {
   background-color: #333;
-  color: #fff;
+  color: #d1d1d1;
   font-family: $font2;
   overflow-x: hidden;
-
-  opacity: 0;
-  visibility: hidden;
-
-  transition: opacity .3s ease, visibility .3s ease;
-
-  &.loaded {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 a {
@@ -48,6 +38,28 @@ ul {
 
   @media screen and (max-width: 900px) {
     background-attachment: scroll;
+  }
+}
+
+.wrp-Loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrp-Site {
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity .3s ease, visibility .3s ease;
+
+  &.loaded {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -168,4 +180,12 @@ blockquote {
 iframe {
   display: block;
   margin: 0 auto;
+}
+
+.ico-Loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
 }

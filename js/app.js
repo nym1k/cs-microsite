@@ -1,5 +1,6 @@
 $(window).on('load', function() {
-  $('body').addClass('loaded');
+  $('.wrp-Site').addClass('loaded');
+  $('.wrp-Loader').hide();
 
   $('.lst-Flex_Items').flickity({
     // options

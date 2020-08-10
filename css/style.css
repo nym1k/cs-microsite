@@ -308,15 +308,9 @@ html {
 
 body {
   background-color: #333;
-  color: #fff;
+  color: #d1d1d1;
   font-family: "Marcellus", serif;
-  overflow-x: hidden;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .3s ease, visibility .3s ease; }
-  body.loaded {
-    opacity: 1;
-    visibility: visible; }
+  overflow-x: hidden; }
 
 a {
   color: currentColor; }
@@ -339,6 +333,23 @@ ul {
   @media screen and (max-width: 900px) {
     .wrp-Wrap, .wrp-Single, .wrp-Album, .wrp-Solace {
       background-attachment: scroll; } }
+
+.wrp-Loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; }
+
+.wrp-Site {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease; }
+  .wrp-Site.loaded {
+    opacity: 1;
+    visibility: visible; }
 
 .wrp-Single {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/gl-bg.jpg"); }
@@ -423,6 +434,13 @@ blockquote {
 iframe {
   display: block;
   margin: 0 auto; }
+
+.ico-Loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -598,7 +616,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: #FFFFFF; }
   .crd-Tile_Content i {
     opacity: 0.8;
     transition: opacity .3s ease, transform .3s ease;
