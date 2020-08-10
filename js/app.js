@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(window).on('load', function() {
   $('body').addClass('loaded');
-  
+
   $('.lst-Flex_Items').flickity({
     // options
     cellAlign: 'left',
