@@ -11,6 +11,16 @@ body {
   color: #fff;
   font-family: $font2;
   overflow-x: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity .3s ease, visibility .3s ease;
+
+  &.loaded {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 a {
