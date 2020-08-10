@@ -340,9 +340,6 @@ ul {
     .wrp-Single {
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/gl-mo-bg.jpg"); } }
 
-.wrp-Album {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/nd-bg.jpg"); }
-
 .wrp-Solace {
   background-position: bottom;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/solace-front.jpg"); }
@@ -643,7 +640,7 @@ p {
       padding-left: 20px;
       padding-right: 20px; } }
   .wrp-Album .sec-Section--colour {
-    background-color: #BB4E37; }
+    background-color: #AF553B; }
   .wrp-Footer .sec-Section--colour {
     background-color: #D57537; }
 
