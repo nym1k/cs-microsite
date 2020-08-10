@@ -308,7 +308,7 @@ html {
 
 body {
   background-color: #333;
-  color: #d1d1d1;
+  color: #ffffff;
   font-family: "Marcellus", serif;
   overflow-x: hidden; }
 
@@ -352,17 +352,17 @@ ul {
     visibility: visible; }
 
 .wrp-Single {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/gl-bg.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("../img/gl-bg.jpg"); }
   @media screen and (max-width: 600px) {
     .wrp-Single {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/gl-mo-bg.jpg"); } }
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/gl-mo-bg.jpg"); } }
 
 .wrp-Solace {
   background-position: bottom;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/solace-front.jpg"); }
   @media screen and (max-width: 600px) {
     .wrp-Solace {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/solace-front.jpg"); } }
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../img/solace-front.jpg"); } }
 
 img {
   max-width: 100%;
@@ -616,8 +616,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: #FFFFFF; }
+  align-items: center; }
   .crd-Tile_Content i {
     opacity: 0.8;
     transition: opacity .3s ease, transform .3s ease;
