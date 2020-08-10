@@ -23,7 +23,7 @@
   line-height: 1.3;
   letter-spacing: .2em;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: normal;
   position: relative;
 
@@ -55,7 +55,21 @@
 .her-Heading_Link {
   margin-left: 20px;
 }
-  
+
+.her-Link {
+  display: block;
+  font-family: $font1;
+  font-size: 1.2em;
+  line-height: 1.3;
+  letter-spacing: .3em;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 601px) {
+    margin-bottom: 0;
+  }
+}
+
 .her-Video_Container {
   @media screen and (min-width: 601px) {
     max-width: 80%;
@@ -92,5 +106,33 @@
 
   svg {
     fill: #fff;
+  }
+}
+
+.her-Items {
+  @media screen and (min-width: 601px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.her-Item {
+  @media screen and (min-width: 601px) {
+    &:first-child {
+      margin-right: 30px;
+      position: relative;
+
+      &::after {
+        display: block;
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: #fff;
+
+        position: absolute;
+        top: 2px;
+        right: -15px;
+      }
+    }
   }
 }
