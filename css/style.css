@@ -491,9 +491,27 @@ p {
   .her-Heading::after {
     content: '';
     display: block;
-    width: 97%;
+    width: 99%;
     height: 3px;
     background-color: #fff; }
+
+.her-Heading_Link {
+  background-color: white;
+  border: 2px solid #333;
+  border-radius: 3px;
+  color: #333;
+  display: inline-block;
+  font-family: "Marcellus SC", serif;
+  font-size: 1.8em;
+  line-height: 1.3;
+  padding: 5px 8px 8px 13px;
+  letter-spacing: .2em;
+  text-decoration: none;
+  transition: background-color .3s ease, border-color .3s ease, color .3s ease; }
+  .her-Heading_Link:hover {
+    background-color: #fcd240;
+    border-color: #333;
+    color: #333; }
 
 .her-Link {
   display: block;
