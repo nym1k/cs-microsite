@@ -53,9 +53,10 @@
     color: $color-glow-light;
     transition: color .3s ease;
 
-    &:hover {
-      color: lighten($color-glow-light, 5%);
-    }
+  }
+
+  &:hover a {
+    color: darken($color-glow-light, 5%);
   }
 }
 

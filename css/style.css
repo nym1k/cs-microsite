@@ -499,8 +499,8 @@ p {
     text-decoration: none;
     color: #fcd240;
     transition: color .3s ease; }
-    .her-Text a:hover {
-      color: #fcd859; }
+  .her-Text:hover a {
+    color: #fccc27; }
 
 .her-Heading_Link {
   background-color: white;
