@@ -345,11 +345,13 @@ ul {
 
 .wrp-Site {
   opacity: 0;
+  overflow: hidden;
   visibility: hidden;
   max-height: 100vh;
   transition: opacity .3s ease, visibility .3s ease; }
   .wrp-Site.loaded {
     opacity: 1;
+    overflow: auto;
     visibility: visible;
     max-height: none; }
 
