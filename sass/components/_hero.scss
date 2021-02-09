@@ -52,10 +52,9 @@
     text-decoration: none;
     color: $color-glow-light;
     transition: color .3s ease;
-
   }
 
-  &:hover a {
+  a:hover {
     color: darken($color-glow-light, 5%);
   }
 }
