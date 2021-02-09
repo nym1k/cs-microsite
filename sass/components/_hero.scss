@@ -43,14 +43,20 @@
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 99% 2px;
+}
 
-  // &::after {
-  //   content: '';
-  //   display: block;
-  //   width: 99%;
-  //   height: 3px;
-  //   background-color: #fff;
-  // }
+.her-Text {
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+
+  a {
+    text-decoration: none;
+    color: $color-glow-light;
+    transition: color .3s ease;
+
+    &:hover {
+      color: lighten($color-glow-light, 5%);
+    }
+  }
 }
 
 .her-Heading_Link {

@@ -493,6 +493,15 @@ p {
   background-repeat: no-repeat;
   background-size: 99% 2px; }
 
+.her-Text {
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3); }
+  .her-Text a {
+    text-decoration: none;
+    color: #fcd240;
+    transition: color .3s ease; }
+    .her-Text a:hover {
+      color: #fcd859; }
+
 .her-Heading_Link {
   background-color: white;
   border: 2px solid #333;
