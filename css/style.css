@@ -499,7 +499,7 @@ p {
     text-decoration: none;
     color: #fcd240;
     transition: color .3s ease; }
-  .her-Text:hover a {
+  .her-Text a:hover {
     color: #fccc27; }
 
 .her-Heading_Link {
