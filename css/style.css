@@ -346,10 +346,12 @@ ul {
 .wrp-Site {
   opacity: 0;
   visibility: hidden;
+  max-height: 100vh;
   transition: opacity .3s ease, visibility .3s ease; }
   .wrp-Site.loaded {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    max-height: none; }
 
 .wrp-Single {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("../img/gl-bg.jpg"); }
@@ -500,7 +502,7 @@ p {
     color: #fcd240;
     transition: color .3s ease; }
   .her-Text a:hover {
-    color: #fccc27; }
+    color: #ecb804; }
 
 .her-Heading_Link {
   background-color: white;

@@ -54,12 +54,14 @@ ul {
 .wrp-Site {
   opacity: 0;
   visibility: hidden;
+  max-height: 100vh;
 
   transition: opacity .3s ease, visibility .3s ease;
 
   &.loaded {
     opacity: 1;
     visibility: visible;
+    max-height: none;
   }
 }
 
