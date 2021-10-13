@@ -411,7 +411,7 @@ img {
       display: block; } }
 
 .ft-Footer {
-  background-color: #AF553B;
+  background-color: #444;
   padding: 20px 0;
   text-align: center; }
 
@@ -714,10 +714,9 @@ p {
     .sec-Section--colour {
       padding-left: 20px;
       padding-right: 20px; } }
-  .wrp-Album .sec-Section--colour {
-    background-color: #AF553B; }
+  .wrp-Album .sec-Section--colour,
   .wrp-Tour .sec-Section--colour {
-    background-color: #D57537; }
+    background-color: #AF553B; }
   .wrp-Footer .sec-Section--colour {
     background-color: #333; }
 
