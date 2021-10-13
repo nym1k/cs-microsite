@@ -26,13 +26,6 @@
   margin: 0 auto;
 }
 
-.sec-Section_Body {
-  &.sec-Section_Body--centered {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .sec-Banner {
   padding: 10px;
   background: $color-grey;
