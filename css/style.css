@@ -322,7 +322,8 @@ ul {
   ul li {
     line-height: 1.5; }
 
-.wrp-Wrap, .wrp-Single, .wrp-Album, .wrp-Solace {
+.wrp-Wrap, .wrp-Single, .wrp-Album,
+.wrp-Tour, .wrp-Solace {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -331,7 +332,8 @@ ul {
   max-width: 100%;
   overflow: hidden; }
   @media screen and (max-width: 900px) {
-    .wrp-Wrap, .wrp-Single, .wrp-Album, .wrp-Solace {
+    .wrp-Wrap, .wrp-Single, .wrp-Album,
+    .wrp-Tour, .wrp-Solace {
       background-attachment: scroll; } }
 
 .wrp-Loader {
@@ -356,7 +358,7 @@ ul {
     max-height: none; }
 
 .wrp-Single {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("../img/gl-bg.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../img/gl-bg.jpg"); }
   @media screen and (max-width: 600px) {
     .wrp-Single {
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/gl-mo-bg.jpg"); } }
@@ -411,7 +413,7 @@ img {
 .ft-Footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #333; }
+  background-color: #D57537; }
 
 figure {
   margin: 0;
@@ -712,14 +714,19 @@ p {
     .sec-Section--colour {
       padding-left: 20px;
       padding-right: 20px; } }
-  .wrp-Album .sec-Section--colour {
+  .wrp-Album .sec-Section--colour,
+  .wrp-Tour .sec-Section--colour {
     background-color: #AF553B; }
   .wrp-Footer .sec-Section--colour {
-    background-color: #D57537; }
+    background-color: #333; }
 
 .sec-Section_Inner {
   max-width: 1200px;
   margin: 0 auto; }
+
+.sec-Section_Body.sec-Section_Body--centered {
+  display: flex;
+  justify-content: center; }
 
 .sec-Banner {
   padding: 10px;

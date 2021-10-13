@@ -11,19 +11,26 @@
   padding: 40px 0;
   @include inner;
 
-  .wrp-Album & {
+  .wrp-Album &,
+  .wrp-Tour & {
     background-color: #AF553B;
   }
 
   .wrp-Footer & {
-    background-color: #D57537;
-    // color: $color-grey;
+    background-color: $color-grey;
   }
 }
 
 .sec-Section_Inner {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.sec-Section_Body {
+  &.sec-Section_Body--centered {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .sec-Banner {

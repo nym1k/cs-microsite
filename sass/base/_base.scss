@@ -69,13 +69,14 @@ ul {
 
 .wrp-Single {
   @extend .wrp-Wrap;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 100%), url('../img/gl-bg.jpg');
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), url('../img/gl-bg.jpg');
   @media screen and (max-width: 600px) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/gl-mo-bg.jpg');
   }
 }
 
-.wrp-Album {
+.wrp-Album,
+.wrp-Tour {
   @extend .wrp-Wrap;
 }
 
@@ -148,7 +149,7 @@ img {
 .ft-Footer {
   text-align: center;
   padding: 20px 0;
-  background-color: $color-grey;
+  background-color: #D57537;
 }
 
 figure {
