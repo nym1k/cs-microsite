@@ -11,9 +11,12 @@
   padding: 40px 0;
   @include inner;
 
-  .wrp-Album &,
-  .wrp-Tour & {
+  .wrp-Album & {
     background-color: #AF553B;
+  }
+
+  .wrp-Tour & {
+    background-color: #D57537;
   }
 
   .wrp-Footer & {
