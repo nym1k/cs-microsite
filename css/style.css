@@ -467,6 +467,9 @@ p {
   max-width: 900px;
   text-align: center;
   width: 100%; }
+  @media screen and (min-width: 1200px) {
+    .her-Content {
+      max-width: 1200px; } }
   .her-Content *:last-child {
     margin-bottom: 0; }
 
@@ -547,7 +550,7 @@ p {
 
 .her-Video_Container {
   margin-bottom: 30px; }
-  @media screen and (min-width: 601px) {
+  @media screen and (min-width: 1200px) {
     .her-Video_Container {
       max-width: 80%;
       margin: 0 auto 30px; } }
@@ -583,22 +586,30 @@ p {
   margin-top: 30px; }
   @media screen and (min-width: 601px) {
     .her-Items {
+      margin-right: -30px;
       display: flex;
-      justify-content: center; } }
+      justify-content: center;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 1024px) {
+    .her-Items {
+      flex-wrap: nowrap; } }
 
 .her-Item {
   margin-bottom: 20px; }
   @media screen and (min-width: 601px) {
     .her-Item {
+      margin-right: 30px; } }
+  @media screen and (min-width: 1024px) {
+    .her-Item {
       margin-right: 50px;
       margin-bottom: 0;
       position: relative; }
       .her-Item::after {
-        display: block;
+        background-color: #fff;
         content: '';
         width: 2px;
         height: 100%;
-        background-color: #fff;
+        display: block;
         position: absolute;
         top: 2px;
         right: -25px; }
