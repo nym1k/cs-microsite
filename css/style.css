@@ -323,7 +323,7 @@ ul {
     line-height: 1.5; }
 
 .wrp-Wrap, .wrp-Single, .wrp-Album,
-.wrp-Tour, .wrp-Solace {
+.wrp-Tour {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -333,7 +333,7 @@ ul {
   overflow: hidden; }
   @media screen and (max-width: 900px) {
     .wrp-Wrap, .wrp-Single, .wrp-Album,
-    .wrp-Tour, .wrp-Solace {
+    .wrp-Tour {
       background-attachment: scroll; } }
 
 .wrp-Loader {
@@ -358,17 +358,10 @@ ul {
     max-height: none; }
 
 .wrp-Single {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../img/gl-bg.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../img/re-bg.jpg"); }
   @media screen and (max-width: 600px) {
     .wrp-Single {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/gl-mo-bg.jpg"); } }
-
-.wrp-Solace {
-  background-position: bottom;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/solace-front.jpg"); }
-  @media screen and (max-width: 600px) {
-    .wrp-Solace {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../img/solace-front.jpg"); } }
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/re-mo-bg.jpg"); } }
 
 img {
   max-width: 100%;
@@ -434,8 +427,11 @@ blockquote {
   letter-spacing: 0.1em;
   line-height: 1.5;
   margin: 25px 0;
-  font-style: italic;
-  color: #ffffcc; }
+  font-style: italic; }
+  .wrp-Resonance blockquote {
+    color: #c3afef; }
+  .wrp-Glow blockquote {
+    color: #ffffcc; }
 
 iframe {
   display: block;
@@ -474,7 +470,7 @@ p {
     margin-bottom: 0; }
 
 .her-Section {
-  margin-bottom: 30px; }
+  margin-bottom: 50px; }
 
 .her-Title {
   border: 0;
@@ -725,9 +721,12 @@ p {
     .sec-Section--colour {
       padding-left: 20px;
       padding-right: 20px; } }
-  .wrp-Album .sec-Section--colour,
-  .wrp-Tour .sec-Section--colour {
+  .wrp-Album.wrp-Resonance .sec-Section--colour {
+    background-color: #264949; }
+  .wrp-Album.wrp-Glow .sec-Section--colour {
     background-color: #AF553B; }
+  .wrp-Tour .sec-Section--colour {
+    background-color: #444; }
   .wrp-Footer .sec-Section--colour {
     background-color: #333; }
 

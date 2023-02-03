@@ -11,9 +11,16 @@
   padding: 40px 0;
   @include inner;
 
-  .wrp-Album &,
-  .wrp-Tour & {
+  .wrp-Album.wrp-Resonance & {
+    background-color: $color-resonance-dark;
+  }
+
+  .wrp-Album.wrp-Glow & {
     background-color: #AF553B;
+  }
+
+  .wrp-Tour & {
+    background-color: $color-lighter-grey;
   }
 
   .wrp-Footer & {

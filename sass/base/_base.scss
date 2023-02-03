@@ -69,24 +69,15 @@ ul {
 
 .wrp-Single {
   @extend .wrp-Wrap;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), url('../img/gl-bg.jpg');
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), url('../img/re-bg.jpg');
   @media screen and (max-width: 600px) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/gl-mo-bg.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('../img/re-mo-bg.jpg');
   }
 }
 
 .wrp-Album,
 .wrp-Tour {
   @extend .wrp-Wrap;
-}
-
-.wrp-Solace {
-  @extend .wrp-Wrap;
-  background-position: bottom;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%), url('../img/solace-front.jpg');
-  @media screen and (max-width: 600px) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url('../img/solace-front.jpg');
-  }
 }
 
 img {
@@ -147,7 +138,7 @@ img {
 }
 
 .ft-Footer {
-  background-color: #444;
+  background-color: $color-lighter-grey;
   padding: 20px 0;
   text-align: center;
 }
@@ -179,7 +170,14 @@ blockquote {
   // font-size: 14px;
   margin: 25px 0;
   font-style: italic;
-  color: #ffffcc;
+
+  .wrp-Resonance & {
+    color: $color-resonance-em;
+  }
+
+  .wrp-Glow & {
+    color: #ffffcc;
+  }
 }
 
 iframe {
