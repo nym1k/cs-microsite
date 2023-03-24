@@ -62,8 +62,15 @@
       <div class="wrp-Single">
         <!-- Hero -->
         <div class="sec-Hero">
+          <div class="her-Ribbon">
+            <a class="her-Ribbon_Link" href="#tour">
+              <h3 class="her-Ribbon_Text">
+                We're going on tour!
+              </h3>
+            </a>
+          </div>
+          
           <div class="her-Container">
-
             <div class="her-Content">
               <h1 class="her-Title">Countless Skies - Official Website</h1>
               <img src="img/logo.png" alt="Countless Skies Logo" class="img-Logo">
@@ -74,7 +81,25 @@
               </div>
 
               <div class="her-Section">
-                <h2 class="her-Heading her-Heading--noUnderline">Resonance out 5th May through Willowtip Records:</h2>
+                <h2 class="her-Heading her-Heading--noUnderline">EU/UK Tour this May with Møl</h2>
+                <ul class="her-Items">
+                  <li class="her-Item">
+                    <a class="her-Heading_Link" href="#tour"
+                      title="All tour dates">see dates</a>
+                  </li>
+                  <li class="her-Item">
+                    <a class="her-Heading_Link" href="http://www.avocadobooking.com/avocms/item/mol-eu-uk-tour-2023" target="_blank"
+                      title="Avocado Booking - Mol Tour Tickets">get tickets</a>
+                  </li>
+                  <li class="her-Item">
+                    <a class="her-Heading_Link" href="https://ko-fi.com/countlessskies" target="_blank"
+                      title="Ko-Fi crowdfunder for tour support">help us bring our cellist!</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="her-Section">  
+                <h3 class="her-Heading her-Heading--noUnderline">Resonance out 5th May through Willowtip Records:</h3>
                 <ul class="her-Items">
                   <li class="her-Item">
                     <a class="her-Heading_Link" href="https://bit.ly/cs-resonance-bc" target="_blank" title="Preorder Resonance - Live from the Studio">preorder resonance</a>
@@ -242,9 +267,13 @@
       <!-- Glow End -->
 
       <!-- Tour -->
-      <div class="wrp-Tour">
+      <div id="tour" class="wrp-Tour">
         <div class="sec-Section sec-Section--colour">
           <div class="sec-Section_Inner">
+
+            <figure class="sec-Section_Image sec-Section_Image--restrained">
+              <img src="img/tour-2023.jpg">
+            </figure>
 
             <a href="https://www.songkick.com/artists/8350063" class="songkick-widget" data-theme="dark" data-other-artists="on" data-track-button="on" data-detect-style="true" data-font-color="#ffffff" data-background-color="transparent" data-locale="en">Upcoming Shows</a>
 
@@ -265,11 +294,22 @@
 
         <footer class="ft-Footer">
           <div class="sec-Section_Inner">
-            <a href="http://rossking.co.uk" title="Ross King Web" target="_blank">Ross King 2020</a>
+            <a href="http://rossking.co.uk" title="Ross King Web" target="_blank">Ross King 2023</a>
           </div>
         </footer>
       </div>
     </div>
+
+    <!-- Ko-Fi Donation Widget -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('countlessskies', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support us',
+        'floating-chat.donateButton.background-color': '#ffffff',
+        'floating-chat.donateButton.text-color': '#323842'
+      });
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <!--  <script type='text/javascript' src='https://d33jdrvd7n2jvn.cloudfront.net/javascripts/bit_widget.js'></script> -->

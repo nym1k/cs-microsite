@@ -40,7 +40,7 @@
   @media screen and (min-width: 769px) {
     position: fixed;
     bottom: 0;
-    left: 10px;
+    right: 10px;
     z-index: 10;
   }
 }
@@ -145,5 +145,6 @@
 }
 
 .sec-Section_Image--restrained {
+  margin: 0 auto;
   max-width: 500px;
 }

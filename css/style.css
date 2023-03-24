@@ -452,6 +452,29 @@ p {
   letter-spacing: .03em;
   margin-top: 0; }
 
+.her-Ribbon {
+  background: white;
+  box-shadow: 0px 0px 20px 5px #333;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  padding: 6px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  @media screen and (min-width: 1024px) {
+    .her-Ribbon {
+      font-size: 24px;
+      top: 75px;
+      left: auto;
+      right: -100px;
+      transform: rotate(35deg);
+      width: 475px; } }
+
+.her-Ribbon_Link {
+  text-decoration: none; }
+
 .her-Container {
   display: flex;
   flex-direction: column;
@@ -741,7 +764,7 @@ p {
     .sec-Banner {
       position: fixed;
       bottom: 0;
-      left: 10px;
+      right: 10px;
       z-index: 10; } }
 
 .sec-Hero {
@@ -816,4 +839,5 @@ p {
   margin-bottom: 40px; }
 
 .sec-Section_Image--restrained {
+  margin: 0 auto;
   max-width: 500px; }
