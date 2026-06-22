@@ -818,3 +818,6 @@ p {
 .sec-Section_Image--restrained {
   margin: 0 auto;
   max-width: 500px; }
+
+.her-Heading--noUnderline {
+  background-image: none; }

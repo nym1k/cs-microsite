@@ -1,0 +1,29 @@
+{
+  "status": "active",
+  "phase": "Phase 1 — Astro rebuild",
+  "summary": "Countless Skies microsite — Astro 5 + Tailwind v4 + Tina CMS rebuild underway; Phase 0 hotfix applied for New Dawn 10th anniversary rerelease",
+  "completedThisWeek": [
+    "Project init (.claude/, CLAUDE.md, docs/, .gitignore, pre-commit hook, git identity)",
+    "Full codebase audit",
+    "Phase 0 hotfix: New Dawn hero announcement, album section, CSS fix, alt attr, footer year 2024→2026"
+  ],
+  "nextUp": [
+    "Commit hotfix (index.html, css/style.css + project-init files)",
+    "Create rebuild/astro branch",
+    "Scaffold Astro 5 + Tailwind v4 + Tina CMS (Phase 1 of rebuild plan)",
+    "Once New Dawn Bandcamp page live: add embed ID to New Dawn section"
+  ],
+  "blockers": [
+    "New Dawn Bandcamp album ID not yet available (new page, goes live 24 Jun 2026)",
+    "Mailchimp account not yet set up (placeholder component in rebuild)"
+  ],
+  "resumeNote": "Commit Phase 0 hotfix files, then create rebuild/astro branch and scaffold Astro 5 + Tailwind v4 + Tina CMS",
+  "carryOverNote": null,
+  "milestones": [
+    { "name": "Phase 0 — New Dawn hotfix", "status": "complete", "due": "2026-06-22" },
+    { "name": "Phase 1 — Astro + Tailwind + Tina scaffold", "status": "planned", "due": null },
+    { "name": "Phase 3 — All components built", "status": "planned", "due": null },
+    { "name": "Phase 6 — DNS cutover to Vercel", "status": "planned", "due": null }
+  ],
+  "lastUpdated": "2026-06-22T23:38:27Z"
+}
