@@ -1,29 +1,34 @@
 {
   "status": "active",
-  "phase": "Phase 1 — Astro rebuild",
-  "summary": "Countless Skies microsite — Astro 5 + Tailwind v4 + Tina CMS rebuild underway; Phase 0 hotfix applied for New Dawn 10th anniversary rerelease",
+  "phase": "Phase 3 — Components",
+  "summary": "Countless Skies microsite — Astro 7 + Tailwind v4 + Tina CMS rebuild underway; all components built, markdown encoding issue outstanding",
   "completedThisWeek": [
     "Project init (.claude/, CLAUDE.md, docs/, .gitignore, pre-commit hook, git identity)",
     "Full codebase audit",
-    "Phase 0 hotfix: New Dawn hero announcement, album section, CSS fix, alt attr, footer year 2024→2026"
+    "Phase 0 hotfix: New Dawn hero announcement, album section, CSS fix, alt attr, footer year 2024→2026",
+    "Phase 0 hotfix committed and pushed to master",
+    "Phase 1: Astro 7 + Tailwind v4 + sitemap scaffolded on rebuild/astro branch",
+    "Phase 2: Content files created — config.json, bio.md, releases/*.md",
+    "Phase 5 scaffold: Tina CMS config with 3 collections (config, releases, bio)",
+    "Phase 3: All components built — Base, Hero, SocialBar, ReleaseSection, BioSection, TourSection, MailingList, Footer"
   ],
   "nextUp": [
-    "Commit hotfix (index.html, css/style.css + project-init files)",
-    "Create rebuild/astro branch",
-    "Scaffold Astro 5 + Tailwind v4 + Tina CMS (Phase 1 of rebuild plan)",
-    "Once New Dawn Bandcamp page live: add embed ID to New Dawn section"
+    "Fix markdown body text encoding issue (curly quotes rendering as â€™ etc.) — inspect dist/index.html after npx astro build",
+    "Styling polish — section text, blockquote accent colours, general pass",
+    "Vercel project setup + Tina Cloud credentials (unblocks npm run build)",
+    "Once New Dawn Bandcamp page live: add embed ID to New Dawn section (DONE — 3827723963)"
   ],
   "blockers": [
-    "New Dawn Bandcamp album ID not yet available (new page, goes live 24 Jun 2026)",
+    "npm run build needs Tina Cloud credentials (TINA_CLIENT_ID, TINA_TOKEN) — set up via Vercel env vars",
     "Mailchimp account not yet set up (placeholder component in rebuild)"
   ],
-  "resumeNote": "Commit Phase 0 hotfix files, then create rebuild/astro branch and scaffold Astro 5 + Tailwind v4 + Tina CMS",
-  "carryOverNote": null,
+  "resumeNote": "Debug markdown body text encoding — curly quotes rendering as â€™ etc. Inspect dist/index.html after npx astro build to see what Astro outputs vs what browser receives",
+  "carryOverNote": "Still having issues with the text",
   "milestones": [
     { "name": "Phase 0 — New Dawn hotfix", "status": "complete", "due": "2026-06-22" },
-    { "name": "Phase 1 — Astro + Tailwind + Tina scaffold", "status": "planned", "due": null },
-    { "name": "Phase 3 — All components built", "status": "planned", "due": null },
+    { "name": "Phase 1 — Astro + Tailwind + Tina scaffold", "status": "complete", "due": null },
+    { "name": "Phase 3 — All components built", "status": "in-progress", "due": null },
     { "name": "Phase 6 — DNS cutover to Vercel", "status": "planned", "due": null }
   ],
-  "lastUpdated": "2026-06-22T23:38:27Z"
+  "lastUpdated": "2026-06-24T01:30:00Z"
 }
