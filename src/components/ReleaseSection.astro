@@ -1,0 +1,33 @@
+---
+interface Props {
+  release: Record<string, any>;
+}
+const { release } = Astro.props;
+const { frontmatter, default: Content } = release;
+const embedSrc = `https://bandcamp.com/EmbeddedPlayer/album=${frontmatter.bandcampAlbumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/${frontmatter.bandcampPackageId ? `package=${frontmatter.bandcampPackageId}/` : ''}`;
+const embedHeight = frontmatter.bandcampPackageId ? '537' : '470';
+
+// Even order = embed left, text right. Odd = text left, embed right.
+const embedFirst = frontmatter.order % 2 === 0;
+---
+
+<section style={`background-color: ${frontmatter.backgroundColor};`} class="w-full py-20">
+  <div class="max-w-[1050px] mx-auto px-5">
+    <div class={`flex flex-col gap-8 md:flex-row md:items-center ${embedFirst ? '' : 'md:flex-row-reverse'}`}>
+      <!-- Bandcamp embed -->
+      <div class="flex-shrink-0 mx-auto md:mx-0">
+        <iframe
+          style={`border: 0; width: 350px; height: ${embedHeight}px;`}
+          src={embedSrc}
+          seamless
+        >
+          <a href={`https://countlessskies.bandcamp.com`}>{frontmatter.title} by Countless Skies</a>
+        </iframe>
+      </div>
+      <!-- Text -->
+      <div class="release-body flex-1" style={`--accent: ${frontmatter.accentColor};`}>
+        <Content />
+      </div>
+    </div>
+  </div>
+</section>

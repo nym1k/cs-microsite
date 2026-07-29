@@ -1,16 +1,23 @@
 {
   "name": "cs-microsite",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node-sass sass/main.scss css/style.css -w"
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "live-server": "^1.2.0",
-    "nodesass": "0.0.2-security"
+  "scripts": {
+    "dev": "tinacms dev --datalayer-port 9001 -c \"astro dev\"",
+    "build": "tinacms build && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.1",
+    "@tinacms/cli": "^2.5.1",
+    "astro": "^7.0.2",
+    "sharp": "^0.35.2",
+    "tailwindcss": "^4.3.1",
+    "tinacms": "^3.9.3"
   }
 }

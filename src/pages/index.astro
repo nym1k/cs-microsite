@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import LoadingScreen from '../components/LoadingScreen.astro';
+import Hero from '../components/Hero.astro';
+import SocialBar from '../components/SocialBar.astro';
+import ReleaseSection from '../components/ReleaseSection.astro';
+import BioSection from '../components/BioSection.astro';
+import TourSection from '../components/TourSection.astro';
+import MailingList from '../components/MailingList.astro';
+import Footer from '../components/Footer.astro';
+
+import siteConfig from '../../content/config.json';
+
+const releaseFiles = import.meta.glob('/content/releases/*.md', { eager: true }) as Record<string, any>;
+const releases = Object.values(releaseFiles).sort(
+  (a: any, b: any) => a.frontmatter.order - b.frontmatter.order
+);
+
+const bioFiles = import.meta.glob('/content/bio.md', { eager: true }) as Record<string, any>;
+const bioFile = Object.values(bioFiles)[0];
+---
+
+<Base config={siteConfig}>
+  <LoadingScreen />
+  <div id="site">
+    <Hero config={siteConfig} />
+    <SocialBar social={siteConfig.social} />
+    {releases.map((release: any) => <ReleaseSection release={release} />)}
+    <BioSection bio={bioFile} />
+    <TourSection />
+    <MailingList formUrl={siteConfig.mailchimpFormUrl} />
+    <Footer config={siteConfig} />
+  </div>
+</Base>

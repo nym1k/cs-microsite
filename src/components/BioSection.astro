@@ -1,0 +1,23 @@
+---
+interface Props {
+  bio: Record<string, any>;
+}
+const { bio } = Astro.props;
+const { frontmatter, default: Content } = bio;
+---
+
+<section class="w-full bg-[#444] py-20">
+  <div class="max-w-[1050px] mx-auto px-5">
+    {frontmatter.photo && (
+      <figure class="mb-6">
+        <img src={frontmatter.photo} alt="Countless Skies band photo" class="w-full mx-auto block" />
+        {frontmatter.photoCredit && (
+          <figcaption class="text-center text-sm mt-2 opacity-70">
+            Photo by <a href={frontmatter.photoCreditUrl} target="_blank" class="underline">{frontmatter.photoCredit}</a>
+          </figcaption>
+        )}
+      </figure>
+    )}
+    <div class="release-body"><Content /></div>
+  </div>
+</section>

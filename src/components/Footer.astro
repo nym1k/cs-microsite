@@ -1,0 +1,25 @@
+---
+interface Props {
+  config: Record<string, any>;
+}
+const { config } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<div class="w-full">
+  <!-- Contact -->
+  <div class="bg-[#444] py-10 text-center">
+    <div class="max-w-[850px] mx-auto px-5">
+      <h3 class="font-heading uppercase tracking-widest text-lg mb-4 border-b border-white/20 pb-2">contact</h3>
+      <p class="mb-1">Contact: <a href={`mailto:${config.contactEmail}`} class="underline hover:opacity-70">{config.contactEmail}</a></p>
+      <p>Press: <a href={`mailto:${config.pressEmail}`} class="underline hover:opacity-70">{config.pressEmail}</a></p>
+    </div>
+  </div>
+
+  <!-- Footer credit -->
+  <footer class="bg-[#333] py-4 text-center text-sm opacity-60">
+    <a href={config.footerCreditUrl} target="_blank" class="hover:opacity-100 transition-opacity">
+      Ross King {year}
+    </a>
+  </footer>
+</div>

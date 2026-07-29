@@ -1,0 +1,57 @@
+fragment ConfigParts on Config {
+  __typename
+  siteTitle
+  siteDescription
+  canonicalUrl
+  ogImage
+  gtmId
+  fbPixelId
+  heroLogoSrc
+  heroBgSrc
+  heroVideoPlaylistUrl
+  heroCtaButtons {
+    __typename
+    label
+    url
+  }
+  heroShopLinks {
+    __typename
+    label
+    url
+  }
+  social {
+    __typename
+    facebook
+    twitter
+    instagram
+    youtube
+  }
+  contactEmail
+  pressEmail
+  mailchimpFormUrl
+  footerCreditUrl
+}
+
+fragment ReleasesParts on Releases {
+  __typename
+  title
+  year
+  releaseDate
+  label
+  formats
+  artwork
+  bandcampAlbumId
+  bandcampPackageId
+  backgroundColor
+  accentColor
+  order
+  body
+}
+
+fragment BioParts on Bio {
+  __typename
+  photo
+  photoCredit
+  photoCreditUrl
+  body
+}

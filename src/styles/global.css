@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Marcellus SC', serif;
+  --font-body: 'Marcellus', serif;
+
+  --color-brand-primary: #1ca7a2;
+  --color-brand-secondary: #7F4E85;
+  --color-brand-tertiary: #365B3B;
+
+  --color-base: #333333;
+  --color-base-light: #444444;
+  --color-grey: #444444;
+}
+
+html, body {
+  background-color: #333;
+  color: white;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+/* Album / bio section body text */
+.release-body p {
+  margin-bottom: 1em;
+}
+.release-body p:last-child {
+  margin-bottom: 0;
+}
+.release-body a {
+  color: inherit;
+  text-decoration: underline;
+}
+.release-body blockquote {
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin: 25px 0;
+  font-style: italic;
+}
+
+/* Per-section blockquote accent colour (set via --accent CSS var) */
+.release-body blockquote { color: var(--accent, inherit); }

@@ -1,0 +1,29 @@
+{
+  "siteTitle": "Countless Skies - Official Site",
+  "siteDescription": "UK melodic death metal — Countless Skies official website",
+  "canonicalUrl": "https://www.countlessskies.com",
+  "ogImage": "/img/fbshare.png",
+  "gtmId": "GTM-MSMSCZS",
+  "fbPixelId": "780151042363207",
+  "heroLogoSrc": "/img/logo.png",
+  "heroBgSrc": "/img/newdawn-hero.jpg",
+  "heroVideoPlaylistUrl": "https://www.youtube.com/embed/videoseries?list=PLPJ9ckT6a5eTvOOgiDR4g-MFXteylMVL2",
+  "heroCtaButtons": [
+    { "label": "purchase new dawn", "url": "https://countlessskies.bandcamp.com/album/new-dawn" }
+  ],
+  "heroShopLinks": [
+    { "label": "bandcamp (us)", "url": "https://bit.ly/cs-bandcamp" },
+    { "label": "big cartel (eu)", "url": "https://bit.ly/cs-merch-eu" },
+    { "label": "big cartel (uk/row)", "url": "https://bit.ly/cs-merch-uk" }
+  ],
+  "social": {
+    "facebook": "https://www.facebook.com/countlessskies",
+    "twitter": "https://www.twitter.com/countless_skies",
+    "instagram": "https://www.instagram.com/countless.skies",
+    "youtube": "https://www.youtube.com/countlessskies"
+  },
+  "contactEmail": "band@countlessskies.com",
+  "pressEmail": "clawhammerpr@gmail.com",
+  "mailchimpFormUrl": "",
+  "footerCreditUrl": "http://rossking.co.uk"
+}

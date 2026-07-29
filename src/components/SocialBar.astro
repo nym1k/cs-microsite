@@ -1,0 +1,42 @@
+---
+interface Props {
+  social: { facebook?: string; twitter?: string; instagram?: string; youtube?: string };
+}
+const { social } = Astro.props;
+
+const links = [
+  { url: social.facebook, icon: 'fab fa-facebook-f', label: 'Facebook' },
+  { url: social.instagram,icon: 'fab fa-instagram',  label: 'Instagram' },
+  { url: social.youtube,  icon: 'fab fa-youtube',    label: 'YouTube' },
+].filter(l => l.url);
+---
+
+<!-- Mobile: inline banner -->
+<div class="bg-[#333] py-3 md:hidden">
+  <ul class="flex justify-center gap-8">
+    {links.map(link => (
+      <li>
+        <a href={link.url} target="_blank" title={`Countless Skies ${link.label}`}
+          class="text-white hover:text-[#1ca7a2] transition-colors text-xl">
+          <i class={link.icon} aria-hidden="true"></i>
+          <span class="sr-only">{link.label}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<!-- Desktop: fixed bottom-right -->
+<div class="hidden md:block fixed bottom-0 right-2.5 z-10 bg-[#333] p-2.5">
+  <ul class="flex flex-col gap-5">
+    {links.map(link => (
+      <li>
+        <a href={link.url} target="_blank" title={`Countless Skies ${link.label}`}
+          class="text-white hover:text-[#1ca7a2] transition-colors text-lg block">
+          <i class={link.icon} aria-hidden="true"></i>
+          <span class="sr-only">{link.label}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
